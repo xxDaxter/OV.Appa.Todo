@@ -17,7 +17,7 @@ Namespace Todo
 #Region "methods"
 #Region "public"
         Public Sub DeleteTodo(item As ITodoItem) Implements ITodoFactory.DeleteTodo
-            Throw New NotImplementedException()
+
         End Sub
 
         Public Function GetAllTodos() As KeyValuePair(Of Integer, ITodoItem) Implements ITodoFactory.GetAllTodos

@@ -69,7 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Attachment\Interfaces\IAttachmentItem.vb" />
-    <Compile Include="Class1.vb" />
+    <Compile Include="GeneralAbstracts\ADirty.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -90,6 +90,7 @@
     <Compile Include="Todo\Factory\TodoFactory.vb" />
     <Compile Include="Todo\Interfaces\ITodoFactory.vb" />
     <Compile Include="Todo\Interfaces\ITodoItem.vb" />
+    <Compile Include="Todo\Item\TodoItem.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">

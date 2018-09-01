@@ -3,6 +3,7 @@
     ''' Dieses Interface stellt das TodoItem dar. Ist das Main Item des Programms.
     ''' </summary>
     Public Interface ITodoItem
+        Inherits IDisposable
 
 #Region "properties"
 
@@ -58,7 +59,7 @@
         ''' Eine Liste Von Anhängen.
         ''' </summary>
         ''' <returns>IAttachmentItem</returns>
-        Property listOfAttachments As List(Of IAttachmentItem)
+        ReadOnly Property listOfAttachments As List(Of IAttachmentItem)
 
         ''' <summary>
         ''' Stellt den aktuellen Status gegenüber der Datenquelle dar.
