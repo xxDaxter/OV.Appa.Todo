@@ -108,19 +108,22 @@
             End Get
         End Property
 
+        Private _dbStatus As DbStatusEnum
         Public Property dbStatus As DbStatusEnum Implements ITodoItem.dbStatus
             Get
-                Throw New NotImplementedException()
+                Return _dbStatus
             End Get
             Set(value As DbStatusEnum)
-                Throw New NotImplementedException()
+                If CheckIfIsDirty(_dbStatus, value) Then
+                    _dbStatus = value
+                End If
             End Set
         End Property
 #End Region
 
 #Region "constructor"
         Friend Sub New(id As Integer)
-
+            _id = id
         End Sub
 #End Region
 
