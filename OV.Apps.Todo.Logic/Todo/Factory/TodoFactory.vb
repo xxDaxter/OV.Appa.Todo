@@ -12,7 +12,6 @@ Namespace Todo
         Friend Sub New(context As IContext)
             _context = context
         End Sub
-
 #End Region
 
 #Region "methods"
@@ -30,6 +29,10 @@ Namespace Todo
         End Function
 
         Public Function CreateNewTodo() As ITodoItem Implements ITodoFactory.CreateNewTodo
+            Throw New NotImplementedException()
+        End Function
+
+        Public Function GetSelectedTodos(list As List(Of Integer)) As ITodoItem Implements ITodoFactory.GetSelectedTodos
             Throw New NotImplementedException()
         End Function
 #End Region

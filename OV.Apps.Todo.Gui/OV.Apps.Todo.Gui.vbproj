@@ -48,9 +48,8 @@
     <OptionInfer>Off</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="OV.Context.Implentation, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\TodoBin\Release\OV.Context.Implentation.dll</HintPath>
+    <Reference Include="OV.Context.Implentation">
+      <HintPath>..\TodoBin\Release\OV.Context.Implentation.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
