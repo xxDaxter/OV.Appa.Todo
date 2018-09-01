@@ -17,23 +17,34 @@ Namespace Todo
 #Region "methods"
 #Region "public"
         Public Sub DeleteTodo(item As ITodoItem) Implements ITodoFactory.DeleteTodo
-
+            '# Todo: Abstrakte Klasse Fehlt noch dbStatus
         End Sub
 
-        Public Function GetAllTodos() As KeyValuePair(Of Integer, ITodoItem) Implements ITodoFactory.GetAllTodos
-            Throw New NotImplementedException()
+        Public Function GetAllTodos() As List(Of ITodoItem) Implements ITodoFactory.GetAllTodos
+            Dim listOfItems As New List(Of ITodoItem)
+            '# Todo: Lader der Items
+
+            Return listOfItems
         End Function
 
         Public Function GetTodoById(id As Integer) As ITodoItem Implements ITodoFactory.GetTodoById
-            Throw New NotImplementedException()
+            Dim item As ITodoItem = New TodoItem(id)
+            '# Todo: Lader des Items
+
+            Return item
         End Function
 
         Public Function CreateNewTodo() As ITodoItem Implements ITodoFactory.CreateNewTodo
-            Throw New NotImplementedException()
+            Dim item As ITodoItem = New TodoItem(0)
+
+            Return item
         End Function
 
-        Public Function GetSelectedTodos(list As List(Of Integer)) As ITodoItem Implements ITodoFactory.GetSelectedTodos
-            Throw New NotImplementedException()
+        Public Function GetSelectedTodos(list As List(Of Integer)) As List(Of ITodoItem) Implements ITodoFactory.GetSelectedTodos
+            Dim listOfItems As New List(Of ITodoItem)
+            '# Todo: Lader der Items
+
+            Return listOfItems
         End Function
 #End Region
 
